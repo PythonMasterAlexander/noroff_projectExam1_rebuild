@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="151.357" viewBox="0 0 123 151.357">
+  <g id="Group_4" data-name="Group 4" transform="translate(-1075.5 -674.5)">
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="5.805" cy="5.805" r="5.805" transform="translate(1092.155 688.532)" fill="none" stroke="#15418c" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_18" data-name="Path 18" d="M121.5,38.174H1.5v-26.9C1.478,5.927,4.551,1.562,8.379,1.5H114.62c3.828.062,6.9,4.427,6.879,9.769ZM3.5,35.383h116V11.269c.022-3.829-2.179-6.962-4.922-7.006H8.379c-2.742.046-4.942,3.178-4.92,7.005Z" transform="translate(1075.5 674.5)" fill="#15418c" stroke="#15418c" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Path_19" data-name="Path 19" d="M114.62,117.887H8.379c-3.88,0-6.879-3.377-6.879-7.536V19.42h120v90.931C121.5,114.51,118.5,117.887,114.62,117.887ZM3.46,21.569v88.782c.322,3.364,2.5,5.762,4.92,5.415H114.62c2.419.347,4.6-2.051,4.92-5.415V21.569Z" transform="translate(1075.5 706.595)" fill="#15418c" stroke="#15418c" stroke-miterlimit="10" stroke-width="2.75"/>
+      <g id="Icon_ionic-md-rocket" data-name="Icon ionic-md-rocket" transform="translate(1125.661 771.226)">
+        <path id="Path_1" data-name="Path 1" d="M31.723,45.564A6.112,6.112,0,0,1,30.355,43a.474.474,0,0,0-.7-.251.447.447,0,0,0-.223.167L26.643,45.9a.307.307,0,0,0,0,.419h1.423c.14,0,.223.14.2.307h0l-.837,2.791a.251.251,0,0,0,.167.335h0l2.791-.837c.167,0,.307,0,.307.2h0V50.4a.251.251,0,0,0,.307.223h.14l3.014-2.791a.586.586,0,0,0,.14-.781.391.391,0,0,0-.223,0,6.112,6.112,0,0,1-2.344-1.479Z" transform="translate(-26.277 -22.982)" fill="#15418c"/>
+        <path id="Path_2" data-name="Path 2" d="M45.552,57.531l.53-4.94c8.82-8.792,8.373-16.969,8.373-16.969s-8.2-.422-17,8.378l-4.94.53a.614.614,0,0,0-.5.279L26.631,51.9a.5.5,0,0,0,0,.754h.223l5.582.53a4.8,4.8,0,0,0,1.116,3.4,4.494,4.494,0,0,0,3.238,1l.53,5.582a.474.474,0,0,0,.614.363l.251-.14L45.246,58A.614.614,0,0,0,45.552,57.531Zm-.837-12.113a2.289,2.289,0,0,1,.167-3.154,2.4,2.4,0,0,1,3.265-.447,2.289,2.289,0,0,1-.167,3.238h0a2.317,2.317,0,0,1-3.182.391Z" transform="translate(-26.459 -35.619)" fill="#15418c"/>
+      </g>
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="5.805" cy="5.805" r="5.805" transform="translate(1109.99 688.532)" fill="none" stroke="#15418c" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="5.805" cy="5.805" r="5.805" transform="translate(1127.796 688.532)" fill="none" stroke="#15418c" stroke-miterlimit="10" stroke-width="2"/>
+      <text id="Newsletter" transform="translate(1097.358 756.807)" fill="#15418c" font-size="15" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="0" y="0">Newsletter</tspan></text>
+    </g>
+  </g>
+</svg>

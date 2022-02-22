@@ -1,0 +1,953 @@
+/*By Alexander Hardeland
+ *
+ * Project Exam first Year*/
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  --lightGray: #ADADAD;
+  --header-border-color: #707070;
+  --black: #000;
+  --red: #DD361C;
+  --white: #f6f6f9;
+  --blue: #15418C;
+  --fontSizeLogo--footer: 1.5rem;
+  --fontSizeLogo--header: 2.75rem; 
+  --marginValue05rem: 0.5rem; 
+  --marginValue1em: 1rem; 
+  --marginValue2em: 2rem;  
+  --marginValue4rem: 4rem; 
+  --headerHeight: 12.5rem;
+  --footerHeight: 18rem;
+}
+
+#indexPage-html, #newsPage-html .body__pageWrapper, #informationPage-html .body__pageWrapper {
+  background-color: var(--black);
+}
+
+html, body  {
+  background-color: #F4F6F9;
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, legend, label, .formErrorMessage, ::placeholder, .formSubmitHeading {
+  font-family: 'Merriweather', 'Georgia', serif; 
+}
+
+footer h4, .logoFontStyle {
+  font-family: 'Helvetica', 'Impact', sans-serif;
+}
+
+#newsPage-html ul a {
+  display: block;
+  width: fit-content;
+  text-decoration: underline;
+  font-size: var(--marginValue1em);
+}
+
+#newsPage-html h2 {
+  margin-bottom: var(--marginValue2em);
+}
+
+#newsPage-html p {
+  margin-bottom: 1.5rem;
+}
+
+#newsPage-html .linkSection p {
+  margin-top: var(--marginValue2em);
+  font-size: 1.3rem;
+}
+
+.logoFontStyle {
+  font-size: var(--fontSizeLogo--header);
+  font-weight: 700;
+  color: var(--white);
+  margin-right: var(--marginValue1em);
+}
+
+.whiteTextColor {
+  color: var(--white);
+}
+
+h1 {
+  font-size: var(--marginValue2em);
+}
+
+#contactUsPage-html h1, #contactUsPage-html h2, #contactUsPage-html label {
+  color: var(--black);
+}
+
+h2, h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.footerLogoContainer__heading > a, p, legend, label, .newsletterForm__section--container h4,
+.footerPageNavigationContainer > a, .footerLogoContainer__heading, .footerSocialMediaContainer h4 {
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, li, #newsPage-html p, label {
+  color: var(--white);
+}
+
+#newsPage-html h1 {
+  margin-bottom: var(--marginValue2em);
+}
+
+.footer--logoImageSize {
+  max-width: 30px;
+}
+
+header {
+  align-items: center;
+  background-color: var(--red);
+  min-height: var(--headerHeight);
+  width: 100%;
+}
+
+.header__logoContainer h1, .header__logoContainer img {
+  display: inline-block;
+}
+
+.header__logoContainer img {
+  max-width: 40px;
+}
+
+.headerSearchContainer img {
+  max-width: 20px;
+}
+
+.searchContainer__image {
+  margin-right: var(--marginValue1em);
+}
+
+.searchContainer__checkbox {
+  border: 0;
+  display: none;
+}
+
+.header__indexPage {
+  background-color: var(--black);
+  border-bottom: solid var(--white) 2px;
+}
+
+#indexPage-html main {
+  max-width: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main__nasaIntroductionContainer {
+  background-color: black;
+  background-image: url(/assets/home-page-background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.main__textInformationContainer {
+  background-color: var(--black);
+  padding: 4rem 0 4rem 0;
+}
+
+.main__textInformationContainer div {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#indexPage-html .main__pageLinksContainer {
+  padding-bottom: var(--marginValue4rem);
+}
+
+#indexPage-html .spaceRocketShip, #indexPage-html .main__peopleInSpaceAndAstronomyImageContainer .spaceRocketShip {
+  display: block;
+  margin: 0 auto;
+  padding: 8rem 0 8rem 0; 
+  max-width: 80px;
+}
+
+#indexPage-html .main__pageLinksContainer--linkFlexContainer img {
+  padding: var(--marginValue2em) 0;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+#indexPage-html .main__peopleInSpaceAndAstronomyImageContainer img {
+  padding: var(--marginValue2em);
+  max-width: 250px;
+}
+
+#indexPage-html h1 {
+  color: var(--white);
+  margin: 10rem auto;
+  text-align: center;
+}
+
+#indexPage-html p {
+  font-size: 1.5rem;
+  color: var(--white);
+  text-align: center;
+  padding: 0 2rem;
+}
+
+#indexPage-html .main__textInformationContainer--secondParagraph {
+  margin: 8rem 0;
+}
+
+.main__textInformationContainer--thirdParagraph {
+  margin-bottom: var(--marginValue4rem);
+}
+
+#indexPage-html .main__textInformationContainer--planetImagesContainer div {
+  margin-bottom: var(--marginValue2em);
+}
+
+#indexPage-html .main__textInformationContainer--planetImagesContainer p {
+  padding-top: var(--marginValue2em);
+}
+
+#indexPage-html .main__pageLinksContainer, #indexPage-html .main__peopleInSpaceAndAstronomyImageContainer {
+  background-color: var(--black);
+}
+
+.main__pageLinksContainer--linkFlexContainer a {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  border: solid var(--white) 2px;
+  border-radius: 2px;
+} 
+
+.main__pageLinksContainer--linkFlexContainer, .main__peopleInSpaceAndAstronomyImageContainer--flexContainer {
+  min-height: fit-content;
+}
+
+.main__pageLinksContainer div, .main__peopleInSpaceAndAstronomyImageContainer--flexContainer div {
+  flex-basis: 300px;
+  border: solid #3b3b3b 2px;
+  padding: var(--marginValue2em) var(--marginValue1em);
+  text-align: center;
+} 
+
+.main__spaceCompanyInformationContainer {
+  max-width: 1800px;
+  margin: 0 auto;
+  gap: 70px;
+}
+
+.main__spaceCompanyInformationContainer--spaceCompany {
+  flex: 1 500px;
+}
+
+#newsPage-html main {
+  max-width: 95%;
+}
+
+#informationPage-html header {
+  background-color: var(--black);
+}
+
+nav a {
+  padding-right: 20px;
+  font-size: 1.5rem;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: rgba(33, 33, 52, 0.1) 0px 1px 4px;
+  max-width: 70%;
+  margin: 4rem auto;
+  padding: 2rem 2rem;
+}
+
+main .alignCenter--mediaQuery, .contactUsPage__mainSectionContainer p {
+  margin-top: var(--marginValue05rem);
+}
+
+article {
+  margin:var(--marginValue1em) 0 var(--marginValue4rem) 0;
+}
+
+.main__newsLetterSection > div > img {
+  margin-left: var(--marginValue2em);
+}
+
+.main__goToTopOfPageSection p {
+  margin-bottom: var(--marginValue2em);
+}
+
+.centerPageContent {
+  width: 100%;
+  max-width: 1300px;
+  margin: var(--marginValue4rem) auto;
+}
+
+.main__goToTopOfPageSection div {
+  margin-top: var(--marginValue2em);
+}
+
+.main__messageFormContainer--inputFields div, .newsletterForm__section--container div {
+  margin-bottom: var(--marginValue2em);
+}
+
+#newsPage-html main, #informationPage-html main {
+  background-color: var(--black);
+  margin: var(--marginValue4rem) auto;
+  padding: 0;
+}
+
+.main__articleNasaArtemisProgramContainer, .main__articlePuttingPeopleOnMarsContainer, .main__articleSpaceBasedEconomyContainer,
+.main__articleRocketReusabilityContainer, .main__spaceCompanyInformationContainer--spaceCompany {
+  border-radius: 2px;
+  border: solid #3b3b3b 2px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.main__articleNasaArtemisProgramContainer p, .main__articleNasaArtemisProgramContainer h3, .main__articleNasaArtemisProgramContainer blockquote {
+  margin-bottom: var(--marginValue1);
+}
+
+.main__articleNasaArtemisProgramContainer blockquote {
+  margin: var(--marginValue4rem) 0 var(--marginValue4rem);
+}
+
+.main__articleNasaArtemisProgramContainer--supportProgramsContainer img {
+  max-width: 200px;
+}
+
+.main__articlePuttingPeopleOnMarsContainer img {
+  max-width: 300px;
+  display: block;
+  margin: var(--marginValue4rem) auto;
+}
+
+.main__articleSpaceBasedEconomyContainer img {
+  max-width: 250px;
+}
+
+.main__articleRocketReusabilityContainer img {
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+.main__articleRocketReusabilityContainer {
+  margin-bottom: var(--marginValue4rem);
+}
+
+.main__articleSpaceBasedEconomyContainer ul {
+  display: inline-block;
+} 
+
+#informationPage-html p {
+  margin: var(--marginValue1em) 0;
+}
+
+.main__articleNasaArtemisProgramContainer--supportProgramsContainer h5 {
+  margin-bottom: var(--marginValue2em);
+}
+
+.artemis-phase1-image {
+  max-width: 250px;
+  float: right;
+}
+
+.main__articleNasaArtemisProgramContainer h3 {
+  margin-bottom: var(--marginValue2em);
+}
+
+#informationPage-html h3, #informationPage-html h4, #informationPage-html p, #informationPage-html blockquote {
+  color: var(--white);
+}
+
+a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--white);
+}
+
+button, a {
+  cursor: pointer;
+}
+
+main a:hover, main button:hover, #informationPage-html main a:hover {
+  background-color: gray;
+  border: 0;
+}
+
+.button {
+  border-radius: 2px;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 700;
+  font-size: var(--marginValue1em);
+  padding: 1rem 2rem;
+}
+
+.topOfPageButton {
+  padding: 0.5rem 1.75rem;
+}
+
+.homePageButton {
+  padding: 0.5rem 3rem;
+}
+
+.sendMessageButton, .newsLetterFormButton {
+  width: 300px;
+}
+
+#informationPage-html main a {
+  border: solid var(--white) 2px;
+  font-size: var(--marginValue1em);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: var(--lightGray);
+  text-decoration: none;
+}
+
+/*Class for when on a page link*/
+.activeLink {
+  background-color: var(--blue);
+  border-radius: 2px;
+  padding: 5px 10px 5px 10px;
+}
+
+legend {
+  margin: var(--marginValue1em) 0 var(--marginValue2em) 0;
+  width: max(300px, 100%);
+}
+
+.paddingTop {
+  padding-top: var(--marginValue2em);
+}
+
+.paddingRight {
+  padding-right: 16px;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+input {
+  border: solid var(--lightGray) 1px;
+  border-radius: 2px;
+  height: 50px;
+  outline: 0;
+}
+
+input, #newsletterEmail {
+  width: min(400px, 100%);
+}
+
+input:hover, textarea:hover {
+  border: solid var(--black) 2px;
+}
+
+textarea {
+  border: solid var(--lightGray) 1px;
+  border-radius: 2px;
+  width: min(800px, 100%);
+  outline: 0;
+}
+
+textarea, input {
+  display: block;
+}
+
+span {
+  display: none;
+}
+
+/*form input errors*/
+.formErrorMessage {
+  color: var(--red);
+  display: inline;
+  font-size: 0.6rem;
+}
+
+.exclamationImage {
+  padding: 10px 10px 0 0;
+}
+
+::placeholder {
+  font-size: 0.8rem;
+  font-style: italic; 
+}
+
+.formValidatedContainer, .newsletterFormValidatedContainer {
+  background-color: #386641;
+}
+
+.formSubmitText {
+  color: var(--white);
+}
+
+footer {
+  align-content: center;
+  background-color: var(--blue);
+  min-height: var(--footerHeight);
+  width: 100%;
+}
+
+#newsPage-html footer {
+  background-color: var(--blue);
+}
+
+@media (max-width: 1250px) {
+  nav a {
+    font-size: var(--marginValue1em);
+  }  
+
+  main .alignCenter--mediaQuery {
+    text-align: center;
+  }
+
+  .header__logoContainer a {
+    font-size: var(--fontSizeLogo--footer);
+  }
+
+  .header__logoContainer img {
+    max-width: 35px;
+  }
+
+  .headerSearchContainer img {
+    max-width: 10px;
+  }
+
+  .main__newsLetterInformationSection--calendarContainer {
+    display: none;
+  }
+
+  .main__newsLetterInformationSection {
+    margin-top: var(--marginValue1em);
+  }
+
+  .main__textInformationContainer div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1040px) {
+  .superPowers--flag {
+    display: none;
+  }
+
+  footer {
+    padding-top: var(--marginValue4rem);
+  }
+
+  .main__messageButtonContainer {
+    text-align: center;
+  }
+
+  .headerSearchContainer {
+    flex: none;
+    position: relative;
+    bottom: 80px;
+  }
+
+  .footerLogoContainer {
+    flex: 100%;
+    justify-content: center;
+  }
+
+  #footerSocialMediaMobileStyling  h4 {
+    text-align: left;
+  }
+
+  #footerLogoMobileStyling  {
+    margin: 5rem auto var(--marginValue4rem) auto;
+  }
+
+  .contactUsPage__mainSectionContainer {
+    text-align: center;
+  }
+
+  .newsletterForm__section--container {
+    justify-content: center;
+  }
+
+  .sendMessageButton {
+    padding: 1.5rem 1rem;
+  }
+
+  .newsLetterFormButton {
+    display: block;
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .contactUsPage__mainSectionContainer {
+    margin-top: var(--marginValue2em);
+  }
+
+  .main__newsLetterInformationSection--calendarContainer  {
+    align-self: center;
+  }
+
+  .contactUsPage__mainSectionContainer > .main__newsLetterSection, .main__articleNasaArtemisProgramContainer--supportProgramsContainer {
+    align-items: center;
+  }
+
+  .main__newsLetterInformationSection--calendarContainer, .main__goToTopOfPageSection {
+    margin-top: var(--marginValue4rem);
+  }
+
+  #newsletterEmailId {
+    width: 250px;
+  }
+
+  .main__goToTopOfPageSection .topOfPageButton {
+    padding: 0.5rem 3.5rem;
+  }
+
+  .main__goToTopOfPageSection .homePageButton {
+    padding: 0.5rem 4rem;
+  }
+
+  .main__newsLetter--formAndButtonContainer, .main__articleNasaArtemisProgramContainer--supportProgramsContainer {
+    flex-direction: column;
+  }
+
+  [for=newsletterEmailId], .newsletterForm__section--container {
+    display: flex;
+  }
+}
+@media (max-width: 700px) {
+  .main__articleSpaceBasedEconomyContainer--flexContainer div {
+    align-self: baseline;
+  }
+
+  h1 {
+    font-size: var(--marginValue1rem);
+    max-width: 300px;
+  }
+
+  h2, h3 {
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  #indexPage-html h2, #indexPage-html h4, #indexPage-html h3 {
+    font-size: var(--marginValue05rem);
+  }
+
+  #indexPage-html .spaceRocketShip, #indexPage-html .main__peopleInSpaceAndAstronomyImageContainer .spaceRocketShip {
+    max-width: 50px;
+  }
+
+  #indexPage-html .main__pageLinksContainer--linkFlexContainer img, #indexPage-html .main__peopleInSpaceAndAstronomyImageContainer img {
+    max-width: 130px;
+  }
+
+  .main__pageLinksContainer div, #indexPage-html .main__pageLinksContainer--linkFlexContainer {
+    margin: 0;
+  }
+
+  #indexPage-html .main__peopleInSpaceAndAstronomyImageContainer--flexContainer, .main__articleSpaceBasedEconomyContainer--flexContainer,
+  #indexPage-html .main__pageLinksContainer--linkFlexContainer, header, #footerPageNavigationContainerMobileStyling {
+    flex-direction: column;
+  }
+
+  #indexPage-html .spaceRocketShip, #indexPage-html .main__peopleInSpaceAndAstronomyImageContainer .spaceRocketShip {
+    max-width: 50px;
+    padding: var(--marginValue2em) 0 var(--marginValue2em);
+  }
+
+  #indexPage-html .main__pageLinksContainer--linkFlexContainer, #indexPage-html .main__pageLinksContainer {
+    padding-bottom: 0;
+  }
+
+  .main__pageLinksContainer--linkFlexContainer div, .main__peopleInSpaceAndAstronomyImageContainer div {
+    border: 0;
+  }
+
+  .main__pageLinksContainer--linkFlexContainer h3 {
+    font-size: var(--marginValue1em);
+  }
+
+  .main__pageLinksContainer--linkFlexContainer a {
+    font-size: var(--marginValue05rem);
+  }
+
+  .main__nasaIntroductionContainer {
+    min-height: 500px;
+  }
+
+  #indexPage-html p {
+    font-size: var(--marginValue1rem);
+    display: block;
+  }
+
+  .header__logoContainer img {
+    max-width: 30px;
+  }
+
+  nav {
+    align-self: center;
+  }
+
+  nav a {
+    font-size: var(--marginValue1em);
+    padding-right: 10px;
+  }  
+
+  main {
+    margin: var(--marginValue2em) auto;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .main__messageFormContainer--inputFields input, .main__messageFormContainer--inputFields textarea {
+    width: 100%;
+  }
+
+  #messageForm h2 {
+   text-align: center; 
+  }
+
+  .contactUsPage__mainSectionContainer .main__newsLetterSection {
+    margin-bottom: var(--marginValue2em);
+  }
+
+  input, textarea {
+    width: 250px;
+  }
+
+  footer {
+    padding-top: 0;
+  }
+
+  .footerLogoContainer, .footerPageNavigationContainer, .footerSocialMediaContainer {
+    width: 60%;
+    text-align: center;
+  }
+
+  .main__messageFormContainer--inputFields {
+    align-items: center;
+  }
+
+  #footerPageNavigationContainerMobileStyling a {
+    font-size: var(--marginValue1em);
+    padding-top: var(--marginValue2em);
+  }
+  
+  #footerSocialMediaMobileStyling h4 {
+    text-align: center;
+    font-size: var(--marginValue1em);
+  }
+
+  #footerPageNavigationContainerMobileStyling {
+    align-content: center;
+    margin-bottom: var(--marginValue4rem);
+  }
+
+  .footerLogoContainer {
+    margin: var(--marginValue2em) auto;
+  }
+
+  #indexPage-html .main__textInformationContainer--secondParagraph {
+    margin: var(--marginValue2em) 0 0 0;
+  }
+
+  .footerLogoContainer img, .headerSearchContainer, #indexPage-html .main__textInformationContainer--thirdParagraph,
+  #indexPage-html .main__textInformationContainer--planetImagesContainer, #informationPage-html .main__articleNasaArtemisProgramContainer--supportProgramsContainer,
+  #informationPage-html img, #informationPage-html .main__articleNasaArtemisProgramContainer h3 {
+    display: none;
+  }
+
+  #footerSocialMediaMobileStyling img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .contactUsPage__mainSectionContainer {
+    margin-top: var(--marginValue2em);
+  }
+
+  #footerLogoMobileStyling h4 {
+    font-size: var(--marginValue1em);
+    margin: 0 auto;
+  }
+
+  .sendMessageButton {
+    width: 250px;
+  }
+
+  .main__newsLetterSection > div > img {
+    margin-top: var(--marginValue2em);
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 360px) {
+  .header__logoContainer a {
+    font-size: var(--marginValue1em);
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+  }
+
+  html, body {
+    background-color: white;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  #messageForm h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: var(--marginValue1em);
+  }
+
+  h3 {
+    font-size: var(--marginValue1em);
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+
+  legend, p, .contactUsPage__mainSectionContainer .main__newsLetterSection, #footerSocialMediaMobileStyling, 
+  #footerPageNavigationContainerMobileStyling, .header__logoContainer img {
+    display: none;
+  }
+
+  #indexPage-html h2 {
+    font-size: var(--marginValue05rem);
+  }
+}
+
+.footerPageNavigationContainer, .footerPageNavigationContainer > a {
+  height: fit-content;
+}
+
+.footerPageNavigationContainer > a {
+  font-size: 1.5rem;
+}
+
+.footerLogoContainer__heading {
+  display: inline-block;
+  font-size: var(--fontSizeLogo--footer);
+  margin-right: var(--marginValue2em);
+}
+
+.footerSocialMediaContainer h4 {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: var(--marginValue1em);
+}
+
+.footerSocialMediaContainer img {
+  padding-right: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+footer, header, 
+.footerPageNavigationContainer, .contactUsPage__mainSectionContainer, .header__logoContainer,
+.main__newsLetterSection, .main__newsLetterInformationSection--calendarContainer div,
+.main__newsLetter--formAndButtonContainer, .main__nasaIntroductionContainer, .main__pageLinksContainer--linkFlexContainer,
+.main__peopleInSpaceAndAstronomyImageContainer--flexContainer, .spaceCompanyInformationContainer--sectionFlexContainer,
+.main__spaceCompanyInformationContainer, .main__articleSpaceBasedEconomyContainer--flexContainer, .main__articleSpaceBasedEconomyContainer--flexContainer div,
+.main__articleNasaArtemisProgramContainer div, .main__articleRocketReusabilityContainer div, .main__articlePuttingPeopleOnMarsContainer div,
+.main__articleNasaArtemisProgramContainer div, .main__articleNasaArtemisProgramContainer--supportProgramsContainer,
+.main__articleNasaArtemisProgramContainer--supportProgramsContainer div, .footerSocialMediaContainer, .footerLogoContainer,
+.main__pageLinksContainer--linkFlexContainer div {
+  display: flex;
+}
+
+footer, header, .footerPageNavigationContainer, .contactUsPage__mainSectionContainer,
+.flexWrapOnContainer, .main__newsLetterInformationSection--calendarContainer div,
+.main__newsLetter--formAndButtonContainer, .main__pageLinksContainer--linkFlexContainer,
+.main__peopleInSpaceAndAstronomyImageContainer--flexContainer, .spaceCompanyInformationContainer--sectionFlexContainer,
+.main__spaceCompanyInformationContainer, .main__articleSpaceBasedEconomyContainer--flexContainer, .main__articleNasaArtemisProgramContainer--supportProgramsContainer {
+  flex-wrap: wrap;
+}
+
+header, .main__pageLinksContainer--linkFlexContainer, .main__peopleInSpaceAndAstronomyImageContainer--flexContainer,
+.main__articleNasaArtemisProgramContainer--supportProgramsContainer, footer {
+  justify-content: space-around;
+}
+
+.main__pageLinksContainer--linkFlexContainer, .main__peopleInSpaceAndAstronomyImageContainer {
+  padding-bottom: var(--marginValue4rem);
+}
+
+.main__newsLetterInformationSection--calendarContainer div {
+  max-width: 200px;
+}
+
+.main__newsLetterInformationSection--calendarContainer img, .main__newsLetterInformationSection--calendarContainer p {
+  padding-bottom: 10px;
+}
+
+.main__newsLetter--formAndButtonContainer, .main__newsLetterInformationSection--calendarContainer div,
+.spaceCompanyInformationContainer--sectionFlexContainer, .main__spaceCompanyInformationContainer, .main__articleSpaceBasedEconomyContainer--flexContainer {
+  justify-content: space-between;
+}
+
+.main__articleSpaceBasedEconomyContainer--flexContainer {
+  align-items: end;
+}
+
+.main__articleSpaceBasedEconomyContainer--flexContainer div, .main__articleSpaceBasedEconomyContainer--flexContainer img {
+    margin-top: 50px;
+  }
+
+.main__newsLetterSection {
+  gap: 5rem;
+  margin-bottom: 7rem;
+}
+
+.header__logoContainer, .main__newsLetter--formAndButtonContainer, .footerLogoContainer, footer {
+  align-items: center;
+}
+
+.contactUsPage__mainSectionContainer, .flexColumn, .main__articleNasaArtemisProgramContainer--supportProgramsContainer div,
+.footerSocialMediaContainer, .main__pageLinksContainer--linkFlexContainer div {
+  flex-direction: column;
+}
+
+.main__newsLetterSection {
+  justify-content: center;
+}
+
+.footerPageNavigationContainer a {
+  width: 50%;
+}
+
+.main__articleRocketReusabilityContainer div, .main__articleSpaceBasedEconomyContainer--flexContainer div,
+.main__articlePuttingPeopleOnMarsContainer div, .main__articleNasaArtemisProgramContainer div {
+  gap: 30px;
+}
