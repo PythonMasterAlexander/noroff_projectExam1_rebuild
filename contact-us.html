@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nasa the new space race contact us page. You can sign up for a news letter or send a message. The contact us page
   provide readers of our page with the opportunity to send us feedback.">
-  <title>Nasa and the new space race contact page, where you can send us a message or join our newsletter</title>
+  <title>The new space race contact page, send us a message or join our newsletter</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
@@ -26,9 +26,6 @@
           <a href="information.html">Information</a>
           <a href="contact-us.html">Contact</a>
         </nav>
-        <section class="headerSearchContainer">
-          <img src="/assets/search-glass-white.svg" class="searchContainer__image" alt="Search glass symbol showing where you can search on page"><input type="checkbox" class="searchContainer__checkbox"><img src="/assets/menu-icon-white.svg" alt="Hamburger menu icon to press down to search">
-        </section>
       </header>
       <main>
         <form action="/submit-form.html" method="post" id="messageForm">
@@ -43,12 +40,12 @@
               </div>
               <div>
                 <label for="emailId">Email</label>
-                <input type="email" name="email" id="emailId" placeholder="Email" required>
+                <input type="email" name="email" id="emailId" placeholder="Email">
                 <span class="emailErrorContainer"><img src="/assets/form-error-symbol.svg" alt="exclamation mark inside a red circle" class="exclamationImage">(Your email required)</span>
               </div>
               <div>
                 <label for="userMessageId">Please write us</label>
-                <textarea name="userMessage" id="userMessageId" cols="30" rows="10" placeholder="Your message" required></textarea>
+                <textarea name="userMessage" id="userMessageId" cols="30" rows="10" placeholder="Your message"></textarea>
                 <span class="userMessageErrorContainer"><img src="/assets/form-error-symbol.svg" alt="exclamation mark inside a red circle" class="exclamationImage">(Your message required)</span>
               </div>
             </section>
@@ -74,7 +71,7 @@
                   <section class="newsletterForm__section--container">
                     <div>
                       <label for="newsletterEmailId">Email</label>
-                      <input type="email" name="newsletterEmail" id="newsletterEmailId" placeholder="Insert..." required>
+                      <input type="email" name="newsletterEmail" id="newsletterEmailId" placeholder="Insert...">
                       <span class="newsletterEmailErrorContainer"><img src="/assets/form-error-symbol.svg"
                       alt="exclamation mark inside a red circle" class="exclamationImage">(Your email required)</span>
                     </div>
@@ -131,7 +128,7 @@
         </section>
       </footer>
     </div>
-    <script src="/scripts/index.js"></script>
+    <script src="/scripts/functions.js"></script>
     <script src="scripts/contact.js"></script>
   </body>
 </html>

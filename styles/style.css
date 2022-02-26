@@ -95,6 +95,18 @@ h1, h2, h3, h4, h5, li, #newsPage-html p, label {
   color: var(--white);
 }
 
+#informationPage-html h1 {
+  margin-bottom: 100px;
+}
+
+#informationPage-html h3, #informationPage-html h4, #informationPage-html p, blockquote {
+  color: var(--white);
+}
+
+#informationPage-html h3, #newsPage-html h2, #newsPage-html .linkSection p {
+  color: #FFFF00;
+}
+
 #newsPage-html h1 {
   margin-bottom: var(--marginValue2em);
 }
@@ -118,17 +130,8 @@ header {
   max-width: 40px;
 }
 
-.headerSearchContainer img {
-  max-width: 20px;
-}
-
 .searchContainer__image {
   margin-right: var(--marginValue1em);
-}
-
-.searchContainer__checkbox {
-  border: 0;
-  display: none;
 }
 
 .header__indexPage {
@@ -366,10 +369,6 @@ article {
   margin-bottom: var(--marginValue2em);
 }
 
-#informationPage-html h3, #informationPage-html h4, #informationPage-html p, #informationPage-html blockquote {
-  color: var(--white);
-}
-
 a {
   font-size: 1.5rem;
   font-weight: 700;
@@ -471,13 +470,13 @@ textarea {
 
 textarea, input {
   display: block;
+  padding-left: 8px;
 }
 
 span {
   display: none;
 }
 
-/*form input errors*/
 .formErrorMessage {
   color: var(--red);
   display: inline;
@@ -510,6 +509,110 @@ footer {
 
 #newsPage-html footer {
   background-color: var(--blue);
+}
+
+.footerPageNavigationContainer, .footerPageNavigationContainer > a {
+  height: fit-content;
+}
+
+.footerPageNavigationContainer > a {
+  font-size: 1.5rem;
+}
+
+.footerLogoContainer__heading {
+  display: inline-block;
+  font-size: var(--fontSizeLogo--footer);
+  margin-right: var(--marginValue2em);
+}
+
+.footerSocialMediaContainer h4 {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: var(--marginValue1em);
+}
+
+.footerSocialMediaContainer img {
+  padding-right: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+footer, header, 
+.footerPageNavigationContainer, .contactUsPage__mainSectionContainer, .header__logoContainer,
+.main__newsLetterSection, .main__newsLetterInformationSection--calendarContainer div,
+.main__newsLetter--formAndButtonContainer, .main__nasaIntroductionContainer, .main__pageLinksContainer--linkFlexContainer,
+.main__peopleInSpaceAndAstronomyImageContainer--flexContainer, .spaceCompanyInformationContainer--sectionFlexContainer,
+.main__spaceCompanyInformationContainer, .main__articleSpaceBasedEconomyContainer--flexContainer, .main__articleSpaceBasedEconomyContainer--flexContainer div,
+.main__articleNasaArtemisProgramContainer div, .main__articleRocketReusabilityContainer div, .main__articlePuttingPeopleOnMarsContainer div,
+.main__articleNasaArtemisProgramContainer div, .main__articleNasaArtemisProgramContainer--supportProgramsContainer,
+.main__articleNasaArtemisProgramContainer--supportProgramsContainer div, .footerSocialMediaContainer, .footerLogoContainer,
+.main__pageLinksContainer--linkFlexContainer div {
+  display: flex;
+}
+
+footer, header, .footerPageNavigationContainer, .contactUsPage__mainSectionContainer,
+.flexWrapOnContainer, .main__newsLetterInformationSection--calendarContainer div,
+.main__newsLetter--formAndButtonContainer, .main__pageLinksContainer--linkFlexContainer,
+.main__peopleInSpaceAndAstronomyImageContainer--flexContainer, .spaceCompanyInformationContainer--sectionFlexContainer,
+.main__spaceCompanyInformationContainer, .main__articleSpaceBasedEconomyContainer--flexContainer, .main__articleNasaArtemisProgramContainer--supportProgramsContainer {
+  flex-wrap: wrap;
+}
+
+header, .main__pageLinksContainer--linkFlexContainer, .main__peopleInSpaceAndAstronomyImageContainer--flexContainer,
+.main__articleNasaArtemisProgramContainer--supportProgramsContainer, footer {
+  justify-content: space-around;
+}
+
+.main__pageLinksContainer--linkFlexContainer, .main__peopleInSpaceAndAstronomyImageContainer {
+  padding-bottom: var(--marginValue4rem);
+}
+
+.main__newsLetterInformationSection--calendarContainer div {
+  max-width: 200px;
+}
+
+.main__newsLetterInformationSection--calendarContainer img, .main__newsLetterInformationSection--calendarContainer p {
+  padding-bottom: 10px;
+}
+
+.main__newsLetter--formAndButtonContainer, .main__newsLetterInformationSection--calendarContainer div,
+.spaceCompanyInformationContainer--sectionFlexContainer, .main__spaceCompanyInformationContainer, .main__articleSpaceBasedEconomyContainer--flexContainer {
+  justify-content: space-between;
+}
+
+.main__articleSpaceBasedEconomyContainer--flexContainer {
+  align-items: end;
+}
+
+.main__articleSpaceBasedEconomyContainer--flexContainer div, .main__articleSpaceBasedEconomyContainer--flexContainer img {
+    margin-top: 50px;
+  }
+
+.main__newsLetterSection {
+  gap: 5rem;
+  margin-bottom: 7rem;
+}
+
+.header__logoContainer, .main__newsLetter--formAndButtonContainer, .footerLogoContainer, footer {
+  align-items: center;
+}
+
+.contactUsPage__mainSectionContainer, .flexColumn, .main__articleNasaArtemisProgramContainer--supportProgramsContainer div,
+.footerSocialMediaContainer, .main__pageLinksContainer--linkFlexContainer div {
+  flex-direction: column;
+}
+
+.main__newsLetterSection {
+  justify-content: center;
+}
+
+.footerPageNavigationContainer a {
+  width: 50%;
+}
+
+.main__articleRocketReusabilityContainer div, .main__articleSpaceBasedEconomyContainer--flexContainer div,
+.main__articlePuttingPeopleOnMarsContainer div, .main__articleNasaArtemisProgramContainer div {
+  gap: 30px;
 }
 
 @media (max-width: 1250px) {
@@ -846,108 +949,4 @@ footer {
   #indexPage-html h2 {
     font-size: var(--marginValue05rem);
   }
-}
-
-.footerPageNavigationContainer, .footerPageNavigationContainer > a {
-  height: fit-content;
-}
-
-.footerPageNavigationContainer > a {
-  font-size: 1.5rem;
-}
-
-.footerLogoContainer__heading {
-  display: inline-block;
-  font-size: var(--fontSizeLogo--footer);
-  margin-right: var(--marginValue2em);
-}
-
-.footerSocialMediaContainer h4 {
-  color: var(--white);
-  font-size: 1.5rem;
-  margin-bottom: var(--marginValue1em);
-}
-
-.footerSocialMediaContainer img {
-  padding-right: 20px;
-  width: 35px;
-  height: 35px;
-}
-
-footer, header, 
-.footerPageNavigationContainer, .contactUsPage__mainSectionContainer, .header__logoContainer,
-.main__newsLetterSection, .main__newsLetterInformationSection--calendarContainer div,
-.main__newsLetter--formAndButtonContainer, .main__nasaIntroductionContainer, .main__pageLinksContainer--linkFlexContainer,
-.main__peopleInSpaceAndAstronomyImageContainer--flexContainer, .spaceCompanyInformationContainer--sectionFlexContainer,
-.main__spaceCompanyInformationContainer, .main__articleSpaceBasedEconomyContainer--flexContainer, .main__articleSpaceBasedEconomyContainer--flexContainer div,
-.main__articleNasaArtemisProgramContainer div, .main__articleRocketReusabilityContainer div, .main__articlePuttingPeopleOnMarsContainer div,
-.main__articleNasaArtemisProgramContainer div, .main__articleNasaArtemisProgramContainer--supportProgramsContainer,
-.main__articleNasaArtemisProgramContainer--supportProgramsContainer div, .footerSocialMediaContainer, .footerLogoContainer,
-.main__pageLinksContainer--linkFlexContainer div {
-  display: flex;
-}
-
-footer, header, .footerPageNavigationContainer, .contactUsPage__mainSectionContainer,
-.flexWrapOnContainer, .main__newsLetterInformationSection--calendarContainer div,
-.main__newsLetter--formAndButtonContainer, .main__pageLinksContainer--linkFlexContainer,
-.main__peopleInSpaceAndAstronomyImageContainer--flexContainer, .spaceCompanyInformationContainer--sectionFlexContainer,
-.main__spaceCompanyInformationContainer, .main__articleSpaceBasedEconomyContainer--flexContainer, .main__articleNasaArtemisProgramContainer--supportProgramsContainer {
-  flex-wrap: wrap;
-}
-
-header, .main__pageLinksContainer--linkFlexContainer, .main__peopleInSpaceAndAstronomyImageContainer--flexContainer,
-.main__articleNasaArtemisProgramContainer--supportProgramsContainer, footer {
-  justify-content: space-around;
-}
-
-.main__pageLinksContainer--linkFlexContainer, .main__peopleInSpaceAndAstronomyImageContainer {
-  padding-bottom: var(--marginValue4rem);
-}
-
-.main__newsLetterInformationSection--calendarContainer div {
-  max-width: 200px;
-}
-
-.main__newsLetterInformationSection--calendarContainer img, .main__newsLetterInformationSection--calendarContainer p {
-  padding-bottom: 10px;
-}
-
-.main__newsLetter--formAndButtonContainer, .main__newsLetterInformationSection--calendarContainer div,
-.spaceCompanyInformationContainer--sectionFlexContainer, .main__spaceCompanyInformationContainer, .main__articleSpaceBasedEconomyContainer--flexContainer {
-  justify-content: space-between;
-}
-
-.main__articleSpaceBasedEconomyContainer--flexContainer {
-  align-items: end;
-}
-
-.main__articleSpaceBasedEconomyContainer--flexContainer div, .main__articleSpaceBasedEconomyContainer--flexContainer img {
-    margin-top: 50px;
-  }
-
-.main__newsLetterSection {
-  gap: 5rem;
-  margin-bottom: 7rem;
-}
-
-.header__logoContainer, .main__newsLetter--formAndButtonContainer, .footerLogoContainer, footer {
-  align-items: center;
-}
-
-.contactUsPage__mainSectionContainer, .flexColumn, .main__articleNasaArtemisProgramContainer--supportProgramsContainer div,
-.footerSocialMediaContainer, .main__pageLinksContainer--linkFlexContainer div {
-  flex-direction: column;
-}
-
-.main__newsLetterSection {
-  justify-content: center;
-}
-
-.footerPageNavigationContainer a {
-  width: 50%;
-}
-
-.main__articleRocketReusabilityContainer div, .main__articleSpaceBasedEconomyContainer--flexContainer div,
-.main__articlePuttingPeopleOnMarsContainer div, .main__articleNasaArtemisProgramContainer div {
-  gap: 30px;
 }

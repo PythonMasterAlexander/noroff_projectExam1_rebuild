@@ -1,5 +1,3 @@
-//By Alexander Hardeland
-
 function messageValidateForm(event) {
     event.preventDefault();
 
