@@ -7,3 +7,8 @@ pageNavigationLinks.forEach(links => {
     links.style.textDecoration = "none";
   }
 });
+
+function apiErrorMessage(error, message) {
+
+  const html = ``;
+}

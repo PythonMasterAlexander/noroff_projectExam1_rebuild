@@ -614,7 +614,6 @@ header, .main__pageLinksContainer--linkFlexContainer, .main__peopleInSpaceAndAst
 .main__articlePuttingPeopleOnMarsContainer div, .main__articleNasaArtemisProgramContainer div {
   gap: 30px;
 }
-
 @media (max-width: 1250px) {
   nav a {
     font-size: var(--marginValue1em);
